@@ -24,6 +24,7 @@ Para comprobar la conectividad entre las máquinas, se ha realizado una conexió
 ---
 ![img](https://github.com/jmv74211/SWAP/blob/master/P1/Im%C3%A1genes/ssh2.jpg)
 
+
 Una vez comprobada las conexiones, comprobamos que el estado del servicio apache:
 ---
 ![img](https://github.com/jmv74211/SWAP/blob/master/P1/Im%C3%A1genes/apacheServerStatus.jpg)
