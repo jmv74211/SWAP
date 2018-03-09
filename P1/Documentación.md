@@ -16,7 +16,7 @@ Dichos Ubuntu servers constan de los servicios LAMP Y OpenSSH Server.
 
 Para comprobar la conectividad entre las máquinas, se ha realizado una conexión SSH de prueba entre ambas.
 
-** Conexión SSH desde el server 1 al server 2 **
+**Conexión SSH desde el server 1 al server 2**
 
 ---
 
@@ -48,3 +48,5 @@ Finalmente, se comprueba en la segunda máquina el servicio web proporcionado po
 ![img](https://github.com/jmv74211/SWAP/blob/master/P1/Im%C3%A1genes/pruebaFinal.jpg)
 
 ---
+
+##  FIN PRÁCTICA 1 
