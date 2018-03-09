@@ -7,7 +7,7 @@ Software utilizado:
 - Sistemas operativos: Ubuntu-16.04.4-server-amd64
 
 
-Tras la instalación de las dos máquinas virtuales, se ha configurado las interfaces de red para que se puedan comunicar. Para ello, el adaptador de red se ha configurado en modo Bridge, con las siguientes direcciones:
+Tras la instalación de las dos máquinas virtuales, se ha configurado las interfaces de red para que se puedan comunicar. Para ello, el adaptador de red se ha configurado en modo **Bridge**, con las siguientes direcciones:
 
 - UbuntuServer1: 192.168.56.10
 - UbuntuServer2: 192.168.56.20
