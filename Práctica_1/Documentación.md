@@ -20,32 +20,32 @@ Para comprobar la conectividad entre las máquinas, se ha realizado una conexió
 
 ---
 
-![img](https://github.com/jmv74211/SWAP/blob/master/P1/Im%C3%A1genes/ssh.jpg)
+![img](https://github.com/jmv74211/SWAP/blob/master/Práctica_1/Imágenes/ssh.jpg)
 
 **Conexión SSH desde el server 2 al server 1**
 
 ---
 
-![img](https://github.com/jmv74211/SWAP/blob/master/P1/Im%C3%A1genes/ssh2.jpg)  
+![img](https://github.com/jmv74211/SWAP/blob/master/Práctica_1/Imágenes/ssh2.jpg)  
 
 
 Una vez comprobada las conexiones, comprobamos que el estado del servicio apache:
 
 ---
 
-![img](https://github.com/jmv74211/SWAP/blob/master/P1/Im%C3%A1genes/apacheServerStatus.jpg)
+![img](https://github.com/jmv74211/SWAP/blob/master/Práctica_1/Imágenes/apacheServerStatus.jpg)
 
 Como prueba adicional, se va a crear un archivo HTML para probar el servicio web
 
 ---
 
-![img](https://github.com/jmv74211/SWAP/blob/master/P1/Im%C3%A1genes/pruebaHTML.jpg)
+![img](https://github.com/jmv74211/SWAP/blob/master/Práctica_1/Imágenes/pruebaHTML.jpg)
 
 Finalmente, se comprueba en la segunda máquina el servicio web proporcionado por la primera
 
 ---
 
-![img](https://github.com/jmv74211/SWAP/blob/master/P1/Im%C3%A1genes/pruebaFinal.jpg)
+![img](https://github.com/jmv74211/SWAP/blob/master/Práctica_1/Imágenes/pruebaFinal.jpg)
 
 ---
 
