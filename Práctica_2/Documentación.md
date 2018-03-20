@@ -18,8 +18,6 @@ En primer lugar, vamos a hacer que los directorios /var/www pertenezcan a los us
 
 **Cambio de propietario en la máquina secundaria (ubuntuServer2)**
 
----
-
 ![img](https://github.com/jmv74211/SWAP/blob/master/Práctica_2/Imágenes/chown2.jpg)
 
 ---
