@@ -104,4 +104,15 @@ Esto no requiere reiniciar o recargar la configuración de los servidores Web qu
 
 Let's Encrypt recomienda correr esta tarea dos veces al día (eligiendo un minuto aleatorio, para aliviar la carga en sus servidores). Tal vez parezca exagerado (siendo que los certificados son válidos por tres meses) pero evitará interrupciones en el servicio en caso de que Let's Encrypt revoque certificados por alguna razón (brecha de seguridad, cambio en algoritmos de hashing, etc.) Tener en cuenta que este trabajo no realiza ninguna tarea si los certificados no están por expirar o revocados.
 
-##  FIN PRÁCTICA 4
+## Referencias
+
+https://www.linuxito.com/seguridad/842-como-generar-un-certificado-ssl-tls-gratis-con-certbot
+
+https://www.linuxito.com/seguridad/616-como-obtener-un-certificado-ssl-gratis-de-let-s-encrypt
+
+https://certbot.eff.org/about/
+
+https://certbot.eff.org/lets-encrypt/debianwheezy-other
+
+
+##  FIN 
