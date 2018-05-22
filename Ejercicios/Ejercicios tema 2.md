@@ -5,23 +5,39 @@
 **Ejercicio T2.1. - Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema).**
 
 •	Web: 85%
+
 •	Applications: 90%
+
 •	Database: 99.9%
+
 •	DNS: 98%
+
 •	Firewall: 85%
+
 •	Switch: 99%
+
 •	Data Center: 99.99%
+
 •	ISP: 95%
 
 Aplicando la fórmula **As = Ac1 + (1-Ac1) * Ac2** para la disponibilidad al replicar y **As = Ac1 * Ac2 * Ac3 * ... * Acn"** para la total, tenemos los siguiente:
+
 •	Web: 0.85 + (1-0.85) * 0.85 = 0.9775
+
 •	Applications: 0.9 + (1-0.9) * 0.9 = 0.99
+
 •	Database: 0.999 + (1-0.999) * 0.999 = 0.999999
+
 •	DNS: 0.98 + (1-0.98) * 0.98 = 0.9996
+
 •	Firewall: 0.9775 (La misma que el componente Web).
+
 •	Switch: 0.99 + (1-0.99) * 0.99 = 0.9999
+
 •	Data Center: 0.9999 + (1-0.9999) * 0.9999 = 0.99999999
+
 •	ISP: 0.95 + (1-0.95) * 0.95 = 0.9975
+
  **Total =** 0.9775*0.99*0.999999*0.9996*0.9775*0.9999*0.99999999*0.9975)*100 =**94.3%**
 
 ---
@@ -39,8 +55,12 @@ Aplicando la fórmula **As = Ac1 + (1-Ac1) * Ac2** para la disponibilidad al rep
 Para realizar esta tarea, podemos utilizar algunas de las siguientes aplicaciones (Existen muchas más):
 
 **-Google Page Speed** mide de 0 a 100 la velocidad de carga del sitio e indica, por orden de prioridad, qué mejorar, aportando información al respecto.
+
 **-Pingdom:** Pingdom es una de las mejores y más fiables de su tipo. Mediante el test que realiza, puntúa (de 0 a 100) la velocidad, monitoriza el número de solicitudes ejecutadas, el tiempo de carga y el tamaño total de la página web.
-**-Load Impact** ejecuta una prueba de resistencia y estrés a la página web que le indiques. Cuenta con dos versiones: una gratuita y otra de pago. La gratuita realiza una simulación de carga con 50 usuarios. La información obtenida es representada en forma de gráficos y mediante un mapa.
+
+**-Load Impact** ejecuta una prueba de resistencia y estrés a la página web que le indiques. Cuenta con dos versiones: una gratuita y otra de pago. La gratuita realiza una simulación de carga con 50 usuarios. La información obtenida es 
+representada en forma de gráficos y mediante un mapa.
+
 **-Loads.in** permite establecer la carga desde diferentes localizaciones mundiales y escoger el navegador. El resultado del análisis que efectúa se muestra mediante varias capturas de pantalla, junto al tiempo (en segundos) de carga en las que se han obtenido. Permite realizar varios tests y compararlos visualmente entre sí.
 
 ---

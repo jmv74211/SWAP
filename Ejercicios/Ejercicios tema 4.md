@@ -184,14 +184,14 @@ La IANA es la responsable de coordinar el espacio de direcciones IP a nivel mund
 
 En la web de la IANA se puede encontrar el espacio de direcciones y su estructura en IPv6 . Como ejemplo:
 
-    El espacio de direcciones 2000::/3 está destinado a direcciones unicast globales.
-    Existen otros espacios de direcciones para multicast,  direccuibes unicast locales y para enlaces locales.
+El espacio de direcciones 2000::/3 está destinado a direcciones unicast globales.
+Existen otros espacios de direcciones para multicast,  direccuibes unicast locales y para enlaces locales.
 
 Las direcciones se asignan jerárquicamente. En general:
 
-    La IANA reparte bloques IP entre los diferentes registros de internet regionales o RIR. Existen 5 englobados por continentes. Para España, el RIR de referencia es el RIPE NCC.
-    En segundo lugar las RIR reparten bloques de IP a los proveedores de servicio o ISP. Podemos ver la lista de miembros (local internet registries) asociados a RIPE en España
-    En última estancia, los ISP reparten las direcciones IP a los usuarios finales.
+La IANA reparte bloques IP entre los diferentes registros de internet regionales o RIR. Existen 5 englobados por continentes. Para España, el RIR de referencia es el RIPE NCC.
+En segundo lugar las RIR reparten bloques de IP a los proveedores de servicio o ISP. Podemos ver la lista de miembros (local internet registries) asociados a RIPE en España
+En última estancia, los ISP reparten las direcciones IP a los usuarios finales.
 
 Como curiosidad, en la propia página del RIPE podemos introducir una IP pública y conocer, entre otros datos, a que ISP pertenece. También podemos ver un mapa de geolocalización de las IP de la red al que pertenece la nuestra.
 
@@ -201,55 +201,70 @@ Por lo visto parecen bloques destinados a la zona del levante Español. Pertenec
 
 **Código PHP para detectar la zona geográfica.**
 
-function locateIp($ip){
-    $d = file_get_contents("http://iplocationtools.com/ip_query.php?ip=$ip&output=raw");
-    if (!$d)
-        return false; // error al abrir conexion
-    $d= explode(",",$d);
-    if ($d[1] != 'OK')
-        return false; // codigo de estatus no valido
-    $country_code = $d[2];
-    $country_name = $d[3];
-    $region_name = $d[5];
-    $city = $d[6];
-    //$zippostalcode = $answer->ZipPostalCode;
-    $latitude = $d[8];
-    $longitude = $d[9];
-    // Devuelve datos como array
-    return array('latitude' => $latitude, 'longitude' => $longitude, 'city' => $city, 'region_name' => $region_name, 'country_name' => $country_name, 'country_code' => $country_code, 'ip' => $ip);
-}
+    function locateIp($ip){
+
+        $d = file_get_contents("http://iplocationtools.com/ip_query.php?ip=$ip&output=raw");
+
+        if (!$d)
+
+            return false; // error al abrir conexion
+
+        $d= explode(",",$d);
+
+        if ($d[1] != 'OK')
+
+            return false; // codigo de estatus no valido
+
+        $country_code = $d[2];
+
+        $country_name = $d[3];
+
+        $region_name = $d[5];
+
+        $city = $d[6];
+
+        //$zippostalcode = $answer->ZipPostalCode;
+
+        $latitude = $d[8];
+
+        $longitude = $d[9];
+
+        // Devuelve datos como array
+
+        return array('latitude' => $latitude, 'longitude' => $longitude, 'city' => $city, 'region_name' => $region_name, 'country_name' => $country_name, 'country_code' => $country_code, 'ip' => $ip);
+    }
 
 
 **Para obtener la IP del visitante.**
 
-function getIP(){
-    if( isset( $_SERVER['HTTP_X_FORWARDED_FOR'] )) $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-    else if( isset( $_SERVER ['HTTP_VIA'] ))  $ip = $_SERVER['HTTP_VIA'];
-    else if( isset( $_SERVER ['REMOTE_ADDR'] ))  $ip = $_SERVER['REMOTE_ADDR'];
-    else $ip = null ;
-    return $ip;
+    function getIP(){
+
+        if( isset( $_SERVER['HTTP_X_FORWARDED_FOR'] )) $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+
+        else if( isset( $_SERVER ['HTTP_VIA'] ))  $ip = $_SERVER['HTTP_VIA'];
+
+        else if( isset( $_SERVER ['REMOTE_ADDR'] ))  $ip = $_SERVER['REMOTE_ADDR'];
+
+        else $ip = null ;
+
+        return $ip;
 }
 
 
 **// Para obtener la IP del propio servidor**
 
 
-function ownIP(){
- $ip= file_get_contents('http://myip.eu/');
- $ip= substr($ip,strpos($ip,'<font size=5>')+14);
- $ip= substr($ip,0,strpos($ip,'<br'));
- return $ip;
-}
- 
-// Obtiene la información y la muestra
-$rec= locateIp(getIP());
- 
-// es posible que la API de Google necesite una key. Solicitar en
-// http://code.google.com/intl/ca/apis/maps/signup.html
-// y ubicar la clave tras "&key=CLAVE"
-echo '<img style="border:1px solid black;" src="http://maps.google.com/staticmap?center='.$rec[latitude].','.$rec[longitude].'&markers='.$rec[latitude].','.$rec[longitude].',tinyblue&zoom=11&size=200x200&key=" />
-',$rec['city'], ',', $rec['country_code'];
+    function ownIP(){
 
+         $ip= file_get_contents('http://myip.eu/');
+
+         $ip= substr($ip,strpos($ip,'<font size=5>')+14);
+
+         $ip= substr($ip,0,strpos($ip,'<br'));
+
+         return $ip;
+    }
+ 
 
 **Referencias**
 

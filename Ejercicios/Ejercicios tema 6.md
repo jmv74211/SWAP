@@ -34,7 +34,7 @@ Podemos hacer la comprobación de estas propiedades mediante el comando: **netst
 
 **Ejercicio T6.3:Buscar información acerca de los tipos de ataques más comunes en servidores web (p.ej. secuestros de sesión). Detallar en qué consisten, y cómo se pueden evitar.** 
 
-**Ataque Por Injection:**Los ataques de inyección, más específicamente sqli (Structured Query Language Injection) es una técnica para modificar una cadena de consulta de base de datos mediante la inyección de código en la consulta. El SQLI explota una posible vulnerabilidad donde las consultas se pueden ejecutar con los datos validados.
+**Ataque Por Injection:** Los ataques de inyección, más específicamente sqli (Structured Query Language Injection) es una técnica para modificar una cadena de consulta de base de datos mediante la inyección de código en la consulta. El SQLI explota una posible vulnerabilidad donde las consultas se pueden ejecutar con los datos validados.
 
 SQLI siguen siendo una de las técnicas de sitios web más usadas y se pueden utilizar para obtener acceso a las tablas de bases de datos, incluyendo información del usuario y la contraseña. Este tipo de ataques son particularmente comunes en los sitios de empresas y de comercio electrónico donde los hackers esperan grandes bases de datos para luego extraer la información sensible.Los ataques sqli también se encuentran entre los ataques más fáciles de ejecutar, que no requiere más que un solo PC y una pequeña cantidad de conocimientos de base de datos.
 
@@ -45,11 +45,11 @@ La forma de **prevenir** estos ataques es utilizar, como mínimo, las funciones 
 Evitar estos ataques no es tarea fácil, ya que al recibir solicitudes de multitud de redes diferentes es difícil saber cuáles son de clientes reales y cuáles son “bots”. A ello hay que sumarle que además hay una constante evolución para cambiar los patrones que los hacen detectables, lo que dificulta todavía más su ejecución.
 **Algunos pasos para evitar este tipo de ataque son:**
 
-    - Mantén tus equipos con antivirus actualizados, ya que algunos monitorizan la actividad de la red y te avisarán de actividades anómalas, permitiéndote prepararte con antelación.
-    - Contrata servicios que se preocupen de tener actualizado el software de sus sistemas, ya que esto minimiza la posibilidad de explotar fallos de seguridad.
-    - Adecua los sistemas de tu empresa a la demanda de tráfico de tu web. En ocasiones tu web se satura porque tienes mucha visibilidad y estás escatimando en los servicios de         hosting que contratas.
-    - Contrata servicios especializados en protección DDoS, estos están pensados para redirigir el exceso de tráfico excedente y evitar que lleguen a afectar a nuestra web.
-    - Al mínimo síntoma (tiempos de carga excesivos en la web) chequea las IPs que están accediendo a tu servidor y busca aquellas que están constantemente enviando solicitudes para     poder bloquearlas. Normalmente, los proveedores de hosting web te proporcionan un panel de control muy intuitivo para realizar estas tareas.
+- Mantén tus equipos con antivirus actualizados, ya que algunos monitorizan la actividad de la red y te avisarán de actividades anómalas, permitiéndote prepararte con antelación.
+- Contrata servicios que se preocupen de tener actualizado el software de sus sistemas, ya que esto minimiza la posibilidad de explotar fallos de seguridad.
+- Adecua los sistemas de tu empresa a la demanda de tráfico de tu web. En ocasiones tu web se satura porque tienes mucha visibilidad y estás escatimando en los servicios de         hosting que contratas.
+- Contrata servicios especializados en protección DDoS, estos están pensados para redirigir el exceso de tráfico excedente y evitar que lleguen a afectar a nuestra web.
+- Al mínimo síntoma (tiempos de carga excesivos en la web) chequea las IPs que están accediendo a tu servidor y busca aquellas que están constantemente enviando solicitudes para     poder bloquearlas. Normalmente, los proveedores de hosting web te proporcionan un panel de control muy intuitivo para realizar estas tareas.
 
 
 Los ataques de denegación de servicio funcionan cuando una computadora con una conexión a Internet intenta inundar un servidor con paquetes. DDoS, por otro lado son cuando muchos dispositivos, a menudo ampliamente distribuidos, en un intento de botnet para inundar el objetivo con cientos, a menudo miles de peticiones.

@@ -34,13 +34,21 @@ Si MASK no es válido se genera un error, como cuando (DEST & MASK) != DEST
 
 Ejemplos:
     - route PRINT Imprimire toda la tabla de enrutamiento
+
     - route PRINT -4 ->Imprime la tabla de enrutamiento con las rutas de IPv4.
+
     - route PRINT -6 -> Imprime la tabla de enrutamiento con las rutas de IPv6
+
     - route PRINT 157* ->Imprime lo que coincida con 157*
+
     - route ADD 157.0.0.0 MASK 255.0.0.0  157.55.80.1 METRIC 3 IF 2 ->Añade la ruta especificada con la metrica 3 y el interfaz 2
+
     - route ADD 3ffe::/32 3ffe::1
+
     - route CHANGE 157.0.0.0 MASK 255.0.0.0 157.55.80.5 METRIC 2 IF 2 ->Cambia una ruta existente
-    - route DELETE 157.0.0.0 -> Borra la ruta.
+
+    - route DELETE 157.0.0.0 -> Borra la ruta
+
     - route DELETE 3ffe::/32 -> Borra la ruta
 
 
@@ -65,12 +73,14 @@ del 	Elimina una ruta de la tabla de enrutamiento
     1.Para mostrar la tabla de enrutamiento: route -n
     El comando anterior mostrará: 
 
-     ![img](https://github.com/jmv74211/SWAP/blob/master/Ejercicios/Imágenes/3.1.jpg)
+
+![img](https://github.com/jmv74211/SWAP/blob/master/Ejercicios/Imágenes/3.1.jpg)
+
 
     2.Para añadir ruta estática a una red en la tabla de enrutamiento:
     route add -net 192.168.1.0 netmask 255.255.255.0 gw 192.168.1.1 dev eth0 
 
-    ![img](https://github.com/jmv74211/SWAP/blob/master/Ejercicios/Imágenes/3.1.2.jpg)	
+![img](https://github.com/jmv74211/SWAP/blob/master/Ejercicios/Imágenes/3.1.2.jpg)  
 
     3.Para eliminar una ruta de la tabla de enrutamiento:
     route del -net 192.168.1.0 netmask 255.255.255.0 gw 192.168.1.1 dev eth0
@@ -80,15 +90,15 @@ del 	Elimina una ruta de la tabla de enrutamiento
 
 **Ejercicio T3.2 Buscar con qué órdenes de terminal o herramientas gráficas podemos configurar bajo Windows y bajo Linux el filtrado y bloqueo de paquetes.**
 
-    Windows
-    -------
+**Windows**
+
     La Plataforma de filtrado de Windows (WFP) permite a los proveedores de software independientes (ISV) filtrar y modificar los paquetes de TCP/IP, supervisar o autorizar conexiones, filtrar tráfico protegido por protocolos de seguridad de internet (IPsec) y filtrar las llamadas a procedimiento remoto (RPC). 
 
     También en windows dispone de un firewall con el cual, podemos establecer un conjunto de reglas para bloquear y filtrar paquetes. Dicho servicio se puede utilizar mediante una interfaz gráfica.
 
-    Linux
-    ------
-    En Linux, el filtrado de paquetes está programado en el núcleo.Los núcleos de Linux han ido evolucionando y con él su firewall, cambiando su implementación
+**Linux**
+  
+  En Linux, el filtrado de paquetes está programado en el núcleo.Los núcleos de Linux han ido evolucionando y con él su firewall, cambiando su implementación
 	en las sucesivas versiones. Así, actualmente se utiliza el módulo NetFilter como firewall de filtrado de paquetes, el cual, junto con la herramienta iptables
 	 permite establecer las reglas de filtrado. El entornoNetfilter permite el filtrado de paquetes (ya sea con o sin estado), la traslación de direcciones y puertos
 	(NAT /NAPT) y otras manipulaciones sobre el datagrama IP (packet mangling).
