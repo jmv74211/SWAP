@@ -3,9 +3,8 @@
 ## Curso: 2017-2018
 
 ---
----
 
-##Objetivos 
+### Objetivos 
 
 •Conceptos alta disponibilidad, redundancia y tolerancia a fallos 
 
@@ -27,7 +26,7 @@
 
 ---
 
-##Temario de teoría
+### Temario de teoría
 
 **Tema 1. Introducción**
 
@@ -59,7 +58,7 @@ Presenta diversas consideraciones a la hora de gestionar el almacenamiento de lo
 
 ---
 
-##Temario de prácticas
+### Temario de prácticas
 
 **- Práctica 1.** Preparación de las herramientas  
 
