@@ -92,16 +92,16 @@ del 	Elimina una ruta de la tabla de enrutamiento
 
 **Windows**
 
-    La Plataforma de filtrado de Windows (WFP) permite a los proveedores de software independientes (ISV) filtrar y modificar los paquetes de TCP/IP, supervisar o autorizar conexiones, filtrar tráfico protegido por protocolos de seguridad de internet (IPsec) y filtrar las llamadas a procedimiento remoto (RPC). 
+La Plataforma de filtrado de Windows (WFP) permite a los proveedores de software independientes (ISV) filtrar y modificar los paquetes de TCP/IP, supervisar o autorizar conexiones, filtrar tráfico protegido por protocolos de seguridad de internet (IPsec) y filtrar las llamadas a procedimiento remoto (RPC). 
 
-    También en windows dispone de un firewall con el cual, podemos establecer un conjunto de reglas para bloquear y filtrar paquetes. Dicho servicio se puede utilizar mediante una interfaz gráfica.
+También en windows dispone de un firewall con el cual, podemos establecer un conjunto de reglas para bloquear y filtrar paquetes. Dicho servicio se puede utilizar mediante una interfaz gráfica.
 
 **Linux**
   
-  En Linux, el filtrado de paquetes está programado en el núcleo.Los núcleos de Linux han ido evolucionando y con él su firewall, cambiando su implementación
-	en las sucesivas versiones. Así, actualmente se utiliza el módulo NetFilter como firewall de filtrado de paquetes, el cual, junto con la herramienta iptables
-	 permite establecer las reglas de filtrado. El entornoNetfilter permite el filtrado de paquetes (ya sea con o sin estado), la traslación de direcciones y puertos
-	(NAT /NAPT) y otras manipulaciones sobre el datagrama IP (packet mangling).
+En Linux, el filtrado de paquetes está programado en el núcleo.Los núcleos de Linux han ido evolucionando y con él su firewall, cambiando su implementación
+en las sucesivas versiones. Así, actualmente se utiliza el módulo NetFilter como firewall de filtrado de paquetes, el cual, junto con la herramienta iptables
+permite establecer las reglas de filtrado. El entornoNetfilter permite el filtrado de paquetes (ya sea con o sin estado), la traslación de direcciones y puertos
+(NAT /NAPT) y otras manipulaciones sobre el datagrama IP (packet mangling).
 
 --- 
 
