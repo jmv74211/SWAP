@@ -71,10 +71,6 @@ Tras realizar todos los pasos indicados en el tutorial, desde la máquina client
 ![img](https://github.com/jmv74211/SWAP/blob/master/Ejercicios/Imágenes/7.4.jpg)
 
 
----
-
-## No hay ejercicios propuestos para este tema :D
-
 --- 
 
 ##  FIN ejercicios tema 7
